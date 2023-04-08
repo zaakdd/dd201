@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>INFOS DE PROFIL:</h1>
+        <fieldset>
+            <input type="radio" name="sexe" id="f" value="f">femme
+            <input type="radio" name="sexe" id="h" value="h">homme<br>
+            <input type="checkbox" value="ste" id="ste">Oui, je suis une ste<br>
+            <label>Nom ste</label>
+            <input type="text" id="steName"><br>
+            <label>titre de profil</label>
+            <input type="text" id="profilName" placeholder="ex:dev php" required><br>
+            <label >pays/ville</label>
+            <select id="ville" required>
+                <option value="choix" disabled>choix</option>
+                <option value="taza" disabled>taza</option>
+                <option value="fes" disabled>fes</option>
+            </select><br>
+            <label>tele</label>
+            <input type="text" id="tele" required>
+        </fieldset>
+        <fieldset>
+            <label>disponibilite</label>
+            <input type="checkbox" value="disp" id="disp" required>a distance<br>
+            <label>tarif</label>
+            <input type="number" id="tarif" required>DH/JRS<br>
+            <label><h4>competence maitrisees</h4></label>
+            <select id="comp">
+                <option value="php">php</option>
+                <option value="js">js</option>
+            </select>
+            <select id="niv">
+                <option value="senior">senior</option>
+                <option value="deb">debutant</option>
+            </select><br>
+            <input type="button" id="add" value="ajouter">
+            <h5>list de vos comp</h5><br>
+            <textarea id="lstComp" ></textarea><br>
+            <p id="test"></p>
+            <input type="button"  id="valider" value="valider">
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
